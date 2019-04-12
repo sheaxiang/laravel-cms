@@ -1,0 +1,34 @@
+{
+    "name": "sheaxiang/shea-cms",
+    "description": "laravel cms",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sheaxiang",
+            "email": "sheaooc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "SheaXiang\\SheaCms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SheaXiang\\SheaCms\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SheaXiang\\SheaCms\\ServiceProvider"
+            ],
+            "aliases": {
+                "LaravelCms": "SheaXiang\\SheaCms\\Facade"
+            }
+        }
+    }
+}
